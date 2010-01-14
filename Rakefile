@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "string_masker"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Masks parameters in a string}
+    gem.description = %Q{Takes a string and a hash of parameters and masks the given parameters from appearing in the string.}
     gem.email = "progressions@gmail.com"
     gem.homepage = "http://github.com/progressions/string_masker"
     gem.authors = ["Jeff Coleman"]
-    gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "rspec", ">= 1.2.6"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -22,6 +22,7 @@ require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
   spec.spec_files = FileList['spec/**/*_spec.rb']
+  spec.spec_opts = ['-c']
 end
 
 Spec::Rake::SpecTask.new(:rcov) do |spec|
