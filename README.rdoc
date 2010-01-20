@@ -4,9 +4,9 @@ Outputs a string with specified contents masked.
 
 == Usage
 
-@masked_string = StringMasker.new("This is a string to be masked. It contains my username, which is fredflintstone, and my password, which is barneyrocks.", :username => "fredflintstone", :password => "barneyrocks")
+  @masked_string = StringMasker.new("This is a string to be masked. It contains my username, which is fredflintstone, and my password, which is barneyrocks.", :username => "fredflintstone", :password => "barneyrocks")
 
-@masked_string.to_s    #=> "This is a string to be masked. It contains my username, which is [username], and my password, which is [password]."
+  @masked_string.to_s    #=> "This is a string to be masked. It contains my username, which is [username], and my password, which is [password]."
 
 == Note on Patches/Pull Requests
  
