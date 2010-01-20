@@ -26,7 +26,8 @@ Gem::Specification.new do |s|
      "lib/string_masker.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/string_masker_spec.rb"
+     "spec/string_masker_spec.rb",
+     "string_masker.gemspec"
   ]
   s.homepage = %q{http://github.com/progressions/string_masker}
   s.rdoc_options = ["--charset=UTF-8"]
